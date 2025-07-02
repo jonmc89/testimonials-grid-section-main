@@ -36,6 +36,8 @@
   padding: 2rem;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 1.5em;
+  box-shadow: 1em 4em 4em rgb(193, 193, 193);
 }
 
 .profile-container {
@@ -61,7 +63,7 @@ h2 {
 .paragraph-1 {
   margin-bottom: 1em;
   font-size: 1.25em;
-  line-height: 1.4em;
+  line-height: 1.2em;
 }
 
 .paragraph-2 {
@@ -93,4 +95,75 @@ h2 {
 
 .purple500-p2 {
   color: var(--PrimaryPurple300);
+}
+
+/** Card grey500 **/
+
+.grey500 {
+  background-color: var(--Grey500);
+}
+
+.grey500-name {
+  color: var(--White);
+}
+
+.grey500-verified {
+  color: var(--Grey200);
+}
+
+.grey500-p1 {
+  color: var(--White);
+}
+
+.grey500-p2 {
+  color: var(--Grey200);
+}
+
+/** Card white **/
+
+.white {
+  background-color: var(--White);
+}
+
+.white-name {
+  color: var(--Grey400);
+}
+
+.white-verified {
+  color: var(--Grey200);
+}
+
+.white-p1 {
+  color: var(--Grey500);
+  font-weight: bolder;
+}
+
+.white-p2 {
+  color: var(--Grey400);
+}
+
+/** Card darkblue **/
+
+.darkblue {
+  background-color: var(--DarkBlue);
+}
+
+.darkblue-img {
+  border: 2px solid var(--PrimaryPurple500);
+}
+
+.darkblue-name {
+  color: var(--Grey200);
+}
+
+.darkblue-verified {
+  color: var(--Grey200);
+}
+
+.darkblue-p1 {
+  color: var(--Grey100);
+}
+
+.darkblue-p2 {
+  color: var(--Grey200);
 }
