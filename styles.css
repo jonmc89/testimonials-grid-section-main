@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif, serif;
 }
 
 /** Colours **/
@@ -20,7 +21,76 @@
   --Black: hsl(0, 0%, 7%);
 }
 
-body {
-  font-size: 13px;
-  font-family: "Barlow Semi Condensed", sans-serif, serif;
+/* Base Card Stylings */
+
+.card-container {
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 95%;
+  padding: 2rem;
+  height: auto;
+  border-radius: 10px;
+}
+
+.profile-container {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+h1 {
+  font-size: 0.8em;
+}
+
+h2 {
+  font-size: 0.6em;
+}
+
+.paragraph-1 {
+  margin-bottom: 1em;
+  font-size: 1.25em;
+  line-height: 1.4em;
+}
+
+.paragraph-2 {
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+/** Card purple500 **/
+
+.purple500 {
+  background-color: var(--PrimaryPurple500);
+}
+
+.purple500-img {
+  border: 2px solid var(--PrimaryPurple300);
+}
+
+.purple500-name {
+  color: var(--PrimaryPurple50);
+}
+
+.purple500-verified {
+  color: var(--PrimaryPurple50);
+}
+
+.purple500-p1 {
+  color: var(--White);
+}
+
+.purple500-p2 {
+  color: var(--PrimaryPurple300);
 }
