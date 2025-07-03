@@ -38,6 +38,8 @@
   border-radius: 10px;
   margin-bottom: 1.5em;
   box-shadow: 1em 4em 4em rgb(193, 193, 193);
+  max-width: 305px;
+  transition: all 0.1s ease-in-out;
 }
 
 .profile-container {
@@ -121,10 +123,13 @@ h2 {
 
 /** Card white **/
 
-.white {
+.white1 {
   background-color: var(--White);
 }
 
+.white2 {
+  background-color: var(--White);
+}
 .white-name {
   color: var(--Grey400);
 }
@@ -166,4 +171,51 @@ h2 {
 
 .darkblue-p2 {
   color: var(--Grey200);
+}
+
+/* Tablet View */
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    gap: 2em;
+  }
+
+  .card {
+    max-width: 100%;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .purple500 {
+    width: 100%;
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .grey500 {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .white1 {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .darkblue {
+    width: 100%;
+    grid-column: span 2;
+    grid-row: 3;
+  }
+
+  .white2 {
+    width: 100%;
+    grid-column: span 2;
+    grid-row: 4;
+  }
 }
