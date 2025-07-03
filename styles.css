@@ -219,3 +219,41 @@ h2 {
     grid-row: 4;
   }
 }
+
+/* Desktop View */
+
+@media screen and (min-width: 1440px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .card {
+    height: 100%;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .purple500 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .grey500 {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .white1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .white2 {
+    grid-row: span 2;
+    grid-column: 4;
+  }
+
+  .darkblue {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
