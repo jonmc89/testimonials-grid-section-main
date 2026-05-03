@@ -10,7 +10,7 @@
     --Black: hsl(0, 0%, 7%);
     --Box-Shadow: hsl(0, 0%, 81%);
     --Dark-blue: hsl(219, 29%, 14%);
-    --Grey-100: hsl(214, 17%, 92%);
+    --Grey-10: hsl(0, 0%, 94%);
     --Grey-100: hsl(0, 0%, 81%);
     --Grey-400: hsl(224, 10%, 45%);
     --Grey-500: hsl(217, 19%, 35%);
@@ -24,6 +24,7 @@ body {
     font-family: "Barlow Semi Condensed", Arial, Helvetica, sans-serif;
     padding: 3rem 2rem;
     scroll-behavior: smooth;
+    background-color: var(--Grey-10);
 }
 
 /* || Main Styles */
@@ -130,6 +131,10 @@ body {
 
 /* Jeanette Card */
 
+.jeanette-card {
+    background-color: var(--White);
+}
+
 .jeanette-name,
 .jeanette-first {
     color: var(--Grey-500);
@@ -161,6 +166,10 @@ body {
 }
 
 /* Kira Card */
+
+.kira-card {
+    background-color: var(--White);
+}
 
 .kira-name,
 .kira-first {
