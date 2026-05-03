@@ -6,16 +6,188 @@
     padding: 0;
 }
 
-
 :root {
-    --Purple_50: hsl(260, 100%, 95%);
-    --Purple-300: hsl(264, 82%, 80%);
-    --Purple-500: hsl(263, 55%, 52%);
-    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+    --Box-Shadow: hsl(0, 0%, 81%);
+    --Dark-blue: hsl(219, 29%, 14%);
     --Grey-100: hsl(214, 17%, 92%);
     --Grey-100: hsl(0, 0%, 81%);
     --Grey-400: hsl(224, 10%, 45%);
     --Grey-500: hsl(217, 19%, 35%);
-    --Dark-blue: hsl(219, 29%, 14%);
-    --Black: hsl(0, 0%, 7%);
+    --Purple_50: hsl(260, 100%, 95%);
+    --Purple-300: hsl(264, 82%, 80%);
+    --Purple-500: hsl(263, 55%, 52%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: "Barlow Semi Condensed", Arial, Helvetica, sans-serif;
+    padding: 3rem 2rem;
+    scroll-behavior: smooth;
+}
+
+/* || Main Styles */
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    gap: 2rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 1rem var(--Box-Shadow);
+    min-width: 15.4375rem;
+    padding: 2rem;
+}
+
+.profile-container {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    margin-block-end: 1rem;
+}
+
+.profile-img {
+    border-radius: 50%;
+    height: auto;
+    width: 2rem;
+}
+
+.name,
+.job {
+    font-size: 0.8rem;
+}
+
+.name,
+.first-paragraph {
+    font-weight: 600;
+}
+
+.first-paragraph {
+    font-size: 1.25rem;
+    margin-block-end: 1rem;
+}
+
+.second-paragraph {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Daniel Card */
+
+.daniel-card {
+    background-color: var(--Purple-500);
+}
+
+.daniel-img {
+    border: 0.2rem solid var(--Purple-300);
+}
+
+.daniel-name,
+.daniel-first {
+    color: var(--White);
+}
+
+.daniel-job,
+.daniel-second {
+    color: var(--Purple_50);
+}
+
+/* Jonathan Card */
+
+.jonathan-card {
+    background-color: var(--Grey-500);
+}
+
+.jonathan-name,
+.jonathan-first {
+    color: var(--White);
+}
+
+.jonathan-job,
+.jonathan-second {
+    color: var(--Grey-100);
+}
+
+/* Jeanette Card */
+
+.jeanette-name,
+.jeanette-first {
+    color: var(--Grey-500);
+}
+
+.jeanette-job,
+.jeanette-second {
+    color: var(--Grey-400);
+}
+
+/* Patrick Card */
+
+.patrick-card {
+    background-color: var(--Dark-blue);
+}
+
+.patrick-img {
+    border: 0.2rem solid var(--Purple-300);
+}
+
+.patrick-name,
+.patrick-first {
+    color: var(--White);
+}
+
+.patrick-job,
+.patrick-second {
+    color: var(--Grey-100);
+}
+
+/* Kira Card */
+
+.kira-name,
+.kira-first {
+    color: var(--Grey-500);
+}
+
+.kira-job,
+.kira-second {
+    color: var(--Grey-400);
+}
+
+/* || Media Queries */
+
+@media screen and (min-width: 80rem) {
+    body {
+        padding: 7rem;
+    }
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .daniel-card {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .jonathan-card {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .jeanette-card {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .patrick-card {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    .kira-card {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
 }
