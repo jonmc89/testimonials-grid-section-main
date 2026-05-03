@@ -68,17 +68,32 @@ body {
 .first-paragraph {
     font-size: 1.25rem;
     margin-block-end: 1rem;
+    position: relative;
+    z-index: 2;
 }
 
 .second-paragraph {
     font-size: 0.95rem;
     font-weight: 500;
+    position: relative;
+    z-index: 2;
 }
 
 /* Daniel Card */
 
 .daniel-card {
     background-color: var(--Purple-500);
+    position: relative;
+}
+
+.quote-img {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 10%;
+    opacity: 0.8;
+    transform: translateX(-10%);
 }
 
 .daniel-img {
@@ -88,11 +103,13 @@ body {
 .daniel-name,
 .daniel-first {
     color: var(--White);
+    z-index: 99;
 }
 
 .daniel-job,
 .daniel-second {
     color: var(--Purple_50);
+    z-index: 99;
 }
 
 /* Jonathan Card */
@@ -169,6 +186,10 @@ body {
     .daniel-card {
         grid-column: 1 / span 2;
         grid-row: 1;
+    }
+
+    .quote-img {
+        display: block;
     }
 
     .jonathan-card {
