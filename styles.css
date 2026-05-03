@@ -185,6 +185,9 @@ body {
 
 @media screen and (min-width: 80rem) {
     body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 7rem;
     }
     .card-container {
